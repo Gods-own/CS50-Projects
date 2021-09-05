@@ -1,0 +1,31 @@
+sort1 uses: BUBBLE SORT
+
+How do you know?: I ran this sort on the reversed10000 text file and the time it took to sort the numbers in real time is 0.435s.
+I also ran this sort on the random10000 text file and the time it took to sort the numbers in real time is 0.454s. I ran this
+sort on the sorted10000 text file and the time it took to sort the numbers in real time is 0.026s.
+Bubble sort has a big O notation of n^2 in the worst case scenario and n in the best case scenario which means that the run time for
+sorting a reversed array of numbers will be greater than the run time for sorting a sorted array of numbers. Comparing the best case
+scenario(i.e the sorted numbers) of this sorting technique with other sorting techniques, this technique is expected to have the
+lesser run time which indeed it has.
+
+sort2 uses: MERGE SORT
+
+How do you know?: I ran this sort on the reversed10000 text file and the time it took to sort the numbers in real time is 0.130s.
+I also ran this sort on the random10000 text file and the time it took to sort the numbers in real time is 0.094s. I ran this
+sort on the sorted10000 text file and the time it took to sort the numbers in real time is 0.040s.
+Merge sort has a big O notation of nlogn in the worst case scenario and nlogn in the best case scenario which means that the difference
+between the run time for a reversed array and a sorted array or a reversed array and a random array or a random array and a sorted array
+would not be a lot. Merge sort is expected to have a lesser run time in comparison with the other sorting techniques in the worst case
+scenario(i.e the reversed numbers and the random numbers) which indeed it has.
+
+
+sort3 uses: SELECTION SORT
+
+How do you know?: I ran this sort on the reversed10000 text file and the time it took to sort the numbers in real time is 0.186s.
+I also ran this sort on the random10000 text file and the time it took to sort the numbers in real time is 0.152s. I ran this
+sort on the sorted10000 text file and the time it took to sort the numbers in real time is 0.205s.
+Selection sort has a big O notation of n^2 in the worst case scenario and n^2 in the best case scenario which means that the difference
+between the run time for a reversed array and a sorted array or a reversed array and a random array or a random array and a sorted array
+would not be a lot. This sorting technique still runs n^2 in a sorted array which gives it a higher run time in comparison with the other
+sorting technique in the best case scenario (i.e sorting a sorted array).
+
