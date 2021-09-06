@@ -1,0 +1,17 @@
+Declare variable height
+
+ Get height from user
+
+  keep prompting the user to input height while height is less than 1 or greater than 8
+
+  Start loop
+
+    for i = 0, perform inner loops height times, each time on a new line, where i is incremented by 1 each time the loop runs
+
+      where the first inner loop prints spaces (g - 1) times for g = height, where g is decremented by 1 each time the loop runs
+
+       and the second inner loop prints # (j + 1) times for j = 0, where j is incremented by 1 each time the loop runs
+
+  End loop
+
+ End program
