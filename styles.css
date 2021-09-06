@@ -1,0 +1,267 @@
+body{
+    margin-bottom: 0;
+}
+
+.jumbotron{
+    /*Photo by Felix Mittermeier from Pexels*/
+	background: url(backgroundimg2.jpg) no-repeat center center;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 20%;
+}
+
+.navbar-brand{
+    font-family: "Brush Script MT", cursive;
+    color: pink;
+    font-size: 40px;
+}
+
+.myName h1{
+    color: white;
+}
+
+.myName p{
+    color: white;
+}
+
+.myName a{
+    color: white;
+    border: 1px darkblue solid;
+    background-color: rgba(255, 192, 203, 0.5);
+}
+
+.myName a:hover{
+    background-color: rgba(255, 192, 203, 1.0);
+}
+
+.myPicture img{
+    width: 280px;
+    height: 254px;
+    border: 1px solid pink;
+    border-radius: 5px;
+}
+
+.cursivetext{
+    color: black;
+}
+
+.lineHeight{
+    line-height: 30px;
+}
+
+.hobbybut a, .projectbut a{
+    border: 1px black solid;
+    background-color: transparent;
+}
+
+.hobbybut a:hover, .projectbut a:hover{
+    border: 1px black solid;
+    background-color: rgba(1, 1, 44, 1.0);
+}
+
+footer{
+    margin-bottom: 0;
+}
+
+.footertag h1{
+    font-family: "Brush Script MT", cursive;
+    color: pink;
+}
+
+.footertag p{
+    color: white;
+    font-size: 13px;
+}
+
+.socials{
+    position: relative;
+}
+
+.socials h4{
+    color: white;
+}
+
+.socials div a img{
+    border-radius: 25px;
+}
+
+.socials p{
+    position: absolute;
+    color: white;
+    font-size: 11px;
+    bottom: 0;
+}
+
+
+       /*STYLING FOR ABOUT PAGE*/
+
+.intro{
+    display: none;
+    background-color: rgba(255, 192, 203, 0.5);
+    border-radius: 5px;
+}
+
+.openinp{
+    width: 80%;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+    padding-left: 8px;
+}
+
+.inputs label{
+    font-size: 20px;
+}
+
+.inpbtn{
+    background-color: rgba(255, 192, 203, 0.5);
+    border-radius: 5px;
+    outline: none;
+    height: 40px;
+    width: 20%;
+    font-size: 20px;
+}
+
+.inpbtn:hover{
+    background-color: rgba(255, 192, 203, 1.0);
+}
+
+.game {
+    background-color: rgba(1, 1, 44, 0.5);
+}
+
+.game:hover{
+    background-color: rgba(1, 1, 44, 1.0);
+}
+
+.response{
+    width: 25%;
+    display: block;
+    border-radius: 5px;
+}
+
+              /*STYLING FOR PROJECT PAGE*/
+.laptop{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+}
+
+@media (max-width: 850px){
+    .navbar-brand {
+    font-size: 25px;
+  }
+
+  .myName h1{
+     text-align: center;
+    font-size: 25px;
+ }
+
+ .myName p{
+    text-align: center;
+ }
+
+ .myName a {
+    display: block;
+ }
+
+ .myPicture img {
+    display: block;
+ }
+
+ .cursivetext{
+    color: black;
+    text-align: center;
+ }
+
+ .footertag h1 {
+    font-size: 25px;
+ }
+
+ .footertag p{
+    font-size: 10px;
+ }
+
+ .socials h4{
+    font-size: 15px;
+ }
+
+ .socials div a img{
+    width: 39px;
+    height: 39px;
+ }
+
+ .socials p{
+     position: static;
+    font-size: 9px;
+    margin-top: 10px;
+ }
+
+              /*STYLING FOR THE ABOUT PAGE*/
+
+ .intro h3{
+    font-size: 20px;
+ }
+
+ .inputs label{
+    font-size: 15px;
+ }
+
+ .openinp{
+    height: 30px;
+    font-size: 15px;
+ }
+
+  .inpbtn{
+    height: 30px;
+    width: 50%;
+    font-size: 15px;
+ }
+
+ .game h3{
+    font-size: 20px;
+ }
+
+  .game h4{
+    font-size: 18.5px;
+ }
+
+ .response{
+    width: 60%;
+
+}
+
+ .game p{
+    font-size: 13px;
+  }
+
+  .songlist{
+      list-style: none;
+  }
+
+                      /*STYLING FOR THE PROJECT PAGE*/
+
+  .proj2 h3{
+      font-size: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
