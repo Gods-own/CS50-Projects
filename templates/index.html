@@ -1,0 +1,65 @@
+    {% extends "layout.html" %}
+
+<link href="/static/styles.css" rel="stylesheet">
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Name</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+               {% if numOfRows > 0 %}
+               {% for viewRowList, updatedValue in combination %}
+
+                    <tr>
+                        <td>{{viewRowList.stock_symbol}}</td>
+                        <td>{{viewRowList.company_name}}</td>
+                        <td>{{updatedValue.sum}}</td>
+                        <td>{{updatedValue.current_stock_price | usd}}</td>
+                        <td>{{(updatedValue.current_stock_price * updatedValue.sum) | usd}}</td>
+                    </tr>
+                {% endfor %}
+                <tr>
+                    <td>CASH</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{cash | usd}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><b>{{grandTotal | usd}}</b></td>
+                </tr>
+            {% else %}
+                 <tr>
+                    <td>CASH</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>{{10000 | usd}}</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td><b>{{10000 | usd}}</b></td>
+                </tr>
+            {% endif %}
+
+        </tbody>
+    </table>
+{% endblock %}

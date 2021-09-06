@@ -1,0 +1,34 @@
+    {% extends "layout.html" %}
+
+<link href="/static/styles.css" rel="stylesheet">
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>Symbol</th>
+                <th>Shares</th>
+                <th>Price</th>
+                <th>Transaction</th>
+            </tr>
+        </thead>
+        <tbody>
+               {% if numOfRows > 0 %}
+               {% for history in histories %}
+
+                    <tr>
+                        <td>{{history.stock_symbol}}</td>
+                        <td>{{history.shares}}</td>
+                        <td>{{history.price | usd}}</td>
+                        <td>{{history.date}}</td>
+                    </tr>
+                {% endfor %}
+            {% endif %}
+
+        </tbody>
+    </table>
+{% endblock %}
